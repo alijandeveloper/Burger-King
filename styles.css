@@ -494,7 +494,112 @@
     }
   }
 
+  /* Contact Section Styling */
+.contact-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+  }
   
+  .contact-section h2 {
+    font-size: 36px;
+    color: #ff9900;
+    margin-bottom: 30px;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .contact-details,
+  .contact-form {
+    flex: 1 1 45%; /* Allows items to grow and shrink */
+    margin: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .contact-details h3,
+  .contact-form h3 {
+    font-size: 28px;
+    color: #ff9900;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left; /* Align labels and inputs to the left */
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .submit-button {
+    padding: 15px 30px;
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #ffcc66;
+  }
+  
+  .map {
+    margin-top: 40px;
+  }
+  
+  .map h3 {
+    font-size: 28px;
+    color: #ff9900;
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive Design for Contact Section */
+  @media (max-width: 768px) {
+    .contact-info {
+      flex-direction: column; /* Stack items on smaller screens */
+      align-items: center; /* Center items on smaller screens */
+    }
+  
+    .contact-details,
+    .contact-form {
+      flex: 1 1 100%; /* Full width on smaller screens */
+      text-align: center; /* Center text on smaller screens */
+      margin-bottom: 30px;
+    }
+  
+    .contact-section h2 {
+      font-size: 28px; /* Adjust heading size for smaller screens */
+    }
+  
+    .contact-details h3,
+    .contact-form h3 {
+      font-size: 24px; /* Adjust heading size for smaller screens */
+    }
+  }
+  
+
+
   /* Footer Styling */
 .footer {
     background-color: #333;
