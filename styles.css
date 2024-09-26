@@ -91,4 +91,83 @@
       transform: rotate(45deg) translate(-5px, -6px);
     }
   }
+
   
+/* Hero Section Styling */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #fff5e6;
+  min-height: 80vh;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h2 {
+  font-size: 48px;
+  color: #ff9900;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin: 20px 0;
+  color: #333;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #ff9900;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ffcc66;
+}
+
+.hero-image {
+  max-width: 45%; /* Limit the image width */
+  flex-shrink: 0; /* Prevent the image from shrinking */
+  padding-left: 20px; /* Add space between text and image */
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+/* Responsive Design for Hero Section */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .hero-content h2 {
+    font-size: 36px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .hero-image {
+    max-width: 90%; /* Limit the image width on small screens */
+    padding: 0; /* Remove padding for mobile view */
+  }
+}
