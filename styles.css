@@ -93,7 +93,6 @@
     }
   }
 
-  
 /* Hero Section Styling */
 .hero {
   display: flex;
@@ -173,7 +172,6 @@
     padding: 0; /* Remove padding for mobile view */
   }
 }
-
 
 /* About Section Styling */
 .about-section {
@@ -259,8 +257,6 @@
     }
   }
   
-
-
 /* Highlights Section Styling */
 .highlights-section {
     padding: 50px;
