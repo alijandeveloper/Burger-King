@@ -14,7 +14,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #ff9900;
+    background-color: #C80036;
   }
   
   .logo h1 {
@@ -32,6 +32,7 @@
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s ease;
+    font-weight: 600;
   }
   
   .nav-links li a:hover {
@@ -59,7 +60,7 @@
       right: 0;
       height: 100vh;
       top: 0;
-      background-color: #ff9900;
+      background-color: #C80036;
       flex-direction: column;
       align-items: center;
       width: 50%;
@@ -99,7 +100,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 50px;
-  background-color: #fff5e6;
+  background-color: #C80036;
   min-height: 80vh;
 }
 
@@ -109,19 +110,19 @@
 
 .hero-content h2 {
   font-size: 48px;
-  color: #ff9900;
+  color: white;
 }
 
 .hero-content p {
   font-size: 20px;
   margin: 20px 0;
-  color: #333;
+  color: white;
 }
 
 .cta-button {
   display: inline-block;
   padding: 15px 30px;
-  background-color: #ff9900;
+  background-color: #4C3D3D;
   color: white;
   text-decoration: none;
   font-size: 18px;
@@ -130,7 +131,8 @@
 }
 
 .cta-button:hover {
-  background-color: #ffcc66;
+  background-color: white;
+  color: black;
 }
 
 .hero-image {
@@ -188,13 +190,13 @@
   
   .about-content h2 {
     font-size: 40px;
-    color: #ff9900;
+    color: #C80036;
     margin-bottom: 20px;
   }
   
   .about-content p {
     font-size: 18px;
-    color: #666;
+    color: #C80036;
     line-height: 1.6;
     margin-bottom: 30px;
   }
@@ -207,7 +209,7 @@
   .about-button {
     display: inline-block;
     padding: 15px 30px;
-    background-color: #ff9900;
+    background-color: #C80036;
     color: white;
     text-decoration: none;
     font-size: 18px;
@@ -216,7 +218,7 @@
   }
   
   .about-button:hover {
-    background-color: #ffcc66;
+    background-color: #4C3D3D;
   }
   
   .menu-button {
@@ -263,7 +265,7 @@
 .highlights-section {
     padding: 50px;
     text-align: center;
-    background-color: #fff5e6;
+    background-color: #C80036;
   }
   
   .highlights-grid {
@@ -283,13 +285,13 @@
   /* Section Heading */
   .highlights-section h2 {
     font-size: 36px;
-    color: #ff9900;
+    color: white;
     margin-bottom: 20px;
   }
   
   .highlights-section p {
     font-size: 18px;
-    color: #666;
+    color: white;
     line-height: 1.6;
     max-width: 800px;
     margin: 0 auto; /* Center paragraph */
