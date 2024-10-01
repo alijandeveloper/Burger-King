@@ -35,10 +35,6 @@
     font-weight: 600;
   }
   
-  .nav-links li a:hover {
-    color: #ffcc66;
-  }
-  
   /* Hide the burger icon on large screens */
   .burger {
     display: none;
@@ -194,7 +190,7 @@
   
   .about-content p {
     font-size: 18px;
-    color: #C80036;
+    color: black;
     line-height: 1.6;
     margin-bottom: 30px;
   }
@@ -261,7 +257,9 @@
 .highlights-section {
     padding: 50px;
     text-align: center;
-    background-color: #C80036;
+    background-color: white;
+    border-top: 1px solid #111010;
+    border-bottom: 1px solid #0e0d0d;
   }
   
   .highlights-grid {
@@ -281,13 +279,13 @@
   /* Section Heading */
   .highlights-section h2 {
     font-size: 36px;
-    color: white;
+    color: #C80036;
     margin-bottom: 20px;
   }
   
   .highlights-section p {
     font-size: 18px;
-    color: white;
+    color: black;
     line-height: 1.6;
     max-width: 800px;
     margin: 0 auto; /* Center paragraph */
@@ -312,127 +310,129 @@
 
 /* Featured Menu Section Styling */
 .menu-section {
-    padding: 50px;
-    background-color: #ffe6cc;
-    text-align: center;
-  }
+  text-align: center;
+  padding: 40px 20px;
+  background-color: white; /* Light background */
+}
+
+.menu-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #C80036;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px;
+}
+
+.menu-item {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* 3D effect */
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: left;
+  padding: 15px;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.menu-item img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px; /* Rounded corners for images */
+}
+
+.menu-item h3 {
+  font-size: 1.5rem;
+  color: #C80036;
+  /* Darker text */
+  text-align: center;
+}
+
+.menu-item p {
+  text-align: center;
+  font-size: 1rem;
+  color: rgb(43, 41, 41); /* Subtle text color */
+  margin: 0;
   
-  .menu-section h2 {
-    font-size: 40px;
-    color: #ff9900;
-    margin-bottom: 40px;
-  }
-  
-  .menu-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-  
-  .menu-item {
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .menu-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  .menu-item img {
-    width: 250px;
-    height: 250px;
-    border-radius: 10px;
-    margin-bottom: 15px;
-  }
-  
-  .menu-item h3 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .menu-item p {
-    font-size: 16px;
-    color: #666;
-  }
-  
-  /* Responsive Design for Menu Grid */
-  @media (max-width: 768px) {
-    .menu-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-  
+}
+
 
   /* Customer Reviews Section Styling */
-.reviews-section {
-    padding: 50px;
-    background-color: #f9f9f9;
+  .reviews-section {
     text-align: center;
-  }
-  
-  .reviews-section h2 {
-    font-size: 40px;
-    color: #ff9900;
-    margin-bottom: 40px;
-  }
-  
-  .reviews-grid {
+    padding: 40px 20px;
+    background-color: #f8f8f8; /* Light background */
+}
+
+.reviews-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #C80036; /* Primary color */
+}
+
+.reviews-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
     gap: 20px;
-  }
-  
-  .review-item {
-    background-color: white;
+}
+
+.review-item {
+    background: #fff; /* White background for review items */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .review-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  .review-item h3 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .review-item p {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 15px;
-  }
-  
-  .stars {
-    color: #ffcc00;
-    font-size: 20px;
-  }
-  
-  /* Responsive Design for Review Grid */
-  @media (max-width: 768px) {
-    .reviews-grid {
-      grid-template-columns: 1fr; /* Stacks the reviews vertically on smaller screens */
-    }
-  }
-  
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.review-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.reviewer-img {
+    width: 80px; /* Set width of reviewer images */
+    height: 80px; /* Set height of reviewer images */
+    border-radius: 50%; /* Circular images */
+    margin-bottom: 15px; /* Space below image */
+    /* Border in primary color */
+}
+
+.review-item h3 {
+    font-size: 1.5rem;
+    color: #C80036; /* Primary color for names */
+    margin: 10px 0;
+}
+
+.review-item p {
+    font-size: 1rem;
+    color: #333; /* Dark text for readability */
+    margin: 0;
+    padding: 0 10px; /* Padding for better spacing */
+}
+
+.stars {
+    font-size: 1.25rem;
+    color: #C80036; /* Star color */
+    margin-top: 10px;
+}
+
 /* Order Section Styling */
 .order-section {
     padding: 50px;
-    background-color: #fff5e6;
+    background-color: rgb(247, 246, 246);
     text-align: center;
   }
   
   .order-section h2 {
     font-size: 36px;
-    color: #ff9900;
+    color: #C80036;
     margin-bottom: 30px;
   }
   
@@ -473,9 +473,6 @@
     transition: background-color 0.3s ease;
   }
   
-  .submit-button:hover {
-    background-color: #ffcc66;
-  }
   
   /* Responsive Design for Order Section */
   @media (max-width: 768px) {
@@ -501,7 +498,7 @@
   
   .contact-section h2 {
     font-size: 36px;
-    color: #ff9900;
+    color: #C80036;
     margin-bottom: 30px;
   }
   
@@ -524,7 +521,7 @@
   .contact-details h3,
   .contact-form h3 {
     font-size: 28px;
-    color: #ff9900;
+    color: #C80036;
   }
   
   .form-group {
@@ -549,7 +546,7 @@
   
   .submit-button {
     padding: 15px 30px;
-    background-color: #ff9900;
+    background-color: #C80036;
     color: white;
     border: none;
     border-radius: 5px;
@@ -559,7 +556,7 @@
   }
   
   .submit-button:hover {
-    background-color: #ffcc66;
+    background-color: #2a2c29;
   }
   
   .map {
@@ -568,7 +565,7 @@
   
   .map h3 {
     font-size: 28px;
-    color: #ff9900;
+    color: #C80036;
     margin-bottom: 20px;
   }
   
@@ -623,7 +620,7 @@
   .footer h3 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #ff9900;
+    color: #C80036;
   }
   
   .footer p,
